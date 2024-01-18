@@ -8,6 +8,15 @@ ul, li{
     margin:0;
     padding: 0;
 }
+.header-bg .nav-link{
+    border:2px transparent solid !important;
+    color: #fff;
+}
+.header-bg .nav-link:hover, .nav-link.active{
+    border-color:#fff !important;
+    color: #fff;
+    background-color: transparent !important;
+}
 .custom-bold{
     font-weight: bold;
 }
