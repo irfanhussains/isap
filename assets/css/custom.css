@@ -1,6 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body{
     font-family: 'Times New Roman', Times, serif;
+
+}
+section{
     overflow-x: hidden;
 }
 ul, li{
@@ -98,9 +101,6 @@ h1::after{
     width:3%;
 }
 @media (max-width: 480px){
-    .navbar-brand img{
-        max-width: 220px;
-    }
     .extraCarousel .carousel-control-next, .extraCarousel .carousel-control-prev{
         width:10%;
     }
@@ -117,6 +117,18 @@ h1::after{
         width:10%;
     }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+    .extraCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .extraCarousel .carousel-inner .carousel-item > div:nth-child(1), .extraCarousel .carousel-inner .carousel-item > div:nth-child(2) {
+        display: block;
+    }
+    .extraCarousel .carousel-control-next, .extraCarousel .carousel-control-prev{
+        width:10%;
+    }
+}
+
 
 .extraCarousel .carousel-inner .carousel-item.active,
 .extraCarousel .carousel-inner .carousel-item-next,
@@ -125,7 +137,7 @@ h1::after{
 }
 
 /* medium and up screens */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     
     .extraCarousel .carousel-inner .carousel-item-end.active,
     .extraCarousel .carousel-inner .carousel-item-next {
@@ -191,4 +203,73 @@ h1::after{
   background-position: center center;
   background-size: cover;
   color: #fff;
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+@media (max-width: 991px) {
+    .brandNav{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+    .header-bg .navbar-nav{
+        width:100%
+    }
+}
+@media (max-width: 768px) {
+    .socialBorders::before , .socialBorders::after{
+        width:150px;
+    }
+    .slider .fs-5{
+        font-size:12px !important;
+    }
+    .slider h1{
+        font-size:16px !important;
+    }
+    .slider p{
+        margin:10px 0 !important;
+    }
+    #myCarousel .carousel-caption {
+        top: 0;
+    }
+    .brandNav{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+    .header-bg .navbar-nav{
+        width:100%
+    }
+}
+
+@media (max-width: 576px) {
+    .slider .fs-5{
+        font-size:11px !important;
+    }
+    .slider h1{
+        font-size:14px !important;
+    }
+    .brandNav{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+    .btn{
+        font-size:14px;
+        padding:4px;
+    }
+    .socialBorders::before, .socialBorders::after {
+        width: 45px;
+    }
+    #myCarousel {
+        min-height: 300px;
+    }
+    .slider .img-fluid {
+        height: 300px;
+    }
+    .slider video{
+        object-fit: initial;
+        height: 300px;
+      }
 }
