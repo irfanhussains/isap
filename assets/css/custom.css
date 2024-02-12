@@ -112,6 +112,24 @@ footer{
   color: #fff;
 }
 
+.knowledge{
+    background:url("../images/minarepakistan.jpg");
+    position:relative;
+    background-attachment: fixed;
+    background:
+    linear-gradient(
+      rgba(0,0,0, 0.70),
+      rgba(0,0,0, 0.70)
+    ),
+    url("../images/minarepakistan.jpg");
+  background-position: center center;
+  background-size: cover;
+  
+}
+.knowledge h1, .knowledge h2{
+    color: #fff;
+}
+
 
 
 .extraCarousel .carousel-control-next, .extraCarousel .carousel-control-prev{
