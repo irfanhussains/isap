@@ -12,15 +12,18 @@ ul, li{
     padding: 0;
 }
 .header-bg .nav-link{
-    border:2px transparent solid !important;
-    color: #fff;
-    font-size: 20px;
+    border:1px #fff solid !important;
+    color: #0C577B;
+    font-size: 14px;
     padding: 4px 6px !important;
 }
 .header-bg .nav-link:hover, .nav-link.active{
-    border-color:#fff !important;
-    color: #fff;
+    border-color:#0C577B !important;
+    color: #0C577B;
     background-color: transparent !important;
+}
+.header-bg .dropdown-item{
+    font-size: 14px;
 }
 .custom-bold{
     font-weight: bold;
@@ -29,13 +32,13 @@ ul, li{
     color: #000;
 }
 .top-social{
-    background-color: #C9CFDC;
+    background-color: #fff;
 }
 .top-social .bi-facebook{
     color: #4267B2;
 }
 .top-social .bi-twitter-x{
-    color: #FFF;
+    color: #000;
 }
 .top-social .bi-youtube{
     color: #FF0000;
@@ -44,21 +47,13 @@ ul, li{
     color: #0077b5;
 }
 .header-bg{
-    background-color: #0C577B;
+    background-color: #fff;
 }
 .logo-size{
-    width: 140px;
-}
-.nav-pills{
-    
-    font-size: 17px;
-    font-weight: bold;
-}
-.nav-pills a{
-    color: #fff;
+    width: 220px;
 }
 .navbar-nav .nav-link.active{
-    color: #fff;
+    color: #0C577B;
 }
 .has-search .form-control {
     padding-left: 2.375rem;
@@ -247,6 +242,10 @@ footer{
 }
 .navbar-toggler{
     background-color: #fff;
+}
+.slider{
+    position:relative;
+    z-index: -1;
 }
 @media (max-width: 991px) {
     .brandNav{
