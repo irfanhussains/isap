@@ -107,6 +107,15 @@ footer{
   color: #fff;
 }
 
+.program h1::after{
+    content: "";
+    position:absolute;
+    border-bottom:3px #F99D22 solid;
+    bottom: -0.5rem;
+    left: 0;
+    width:100px;
+}
+
 .knowledge{
     background:url("../images/minarepakistan.jpg");
     position:relative;
@@ -124,8 +133,18 @@ footer{
 .knowledge h1, .knowledge h2{
     color: #fff;
 }
-
-
+.blueBg{
+    margin-right:15px;
+    padding:15px;
+}
+.blueBg img{
+    border:1px #fff solid;
+    
+}
+.blueBg p{
+    font-size:14px;
+    line-height: 21px;
+}
 
 .extraCarousel .carousel-control-next, .extraCarousel .carousel-control-prev{
     width:3%;
@@ -188,8 +207,72 @@ footer{
 .extraCarousel .card{
     margin-right: 15px;
     border-radius: 0;
+    background:none;
     
 }
+.extraCarousel .card p{
+    font-size: 12px;
+}
+
+/*Program Carousel*/
+.programCarousel .carousel-control-next, .programCarousel .carousel-control-prev{
+    width:3%;
+}
+@media (max-width: 480px){
+    .programCarousel .carousel-control-next, .programCarousel .carousel-control-prev{
+        width:10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .programCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .programCarousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .programCarousel .carousel-control-next, .programCarousel .carousel-control-prev{
+        width:10%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .programCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .programCarousel .carousel-inner .carousel-item > div:nth-child(1), .programCarousel .carousel-inner .carousel-item > div:nth-child(2) {
+        display: block;
+    }
+    .programCarousel .carousel-control-next, .programCarousel .carousel-control-prev{
+        width:10%;
+    }
+}
+
+
+.programCarousel .carousel-inner .carousel-item.active,
+.programCarousel .carousel-inner .carousel-item-next,
+.programCarousel .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 992px) {
+    
+    .programCarousel .carousel-inner .carousel-item-end.active,
+    .programCarousel .carousel-inner .carousel-item-next {
+      transform: translateX(33%);
+    }
+    
+    .programCarousel .carousel-inner .carousel-item-start.active, 
+    .programCarousel .carousel-inner .carousel-item-prev {
+      transform: translateX(-33%);
+    }
+}
+
+.programCarousel .carousel-inner .carousel-item-end,
+.programCarousel .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
 
 .icon-circle{
     width: 60px;
@@ -206,9 +289,7 @@ footer{
     background-attachment: fixed;
     background-size: cover;
 }
-.IsapVideo{
-    background: #C1D3DC;
-}
+
 .socialBorders::before{
     content:"";
     border:1px #ccc solid;
@@ -223,7 +304,7 @@ footer{
     position:absolute;
     right:0;
 }
-.blueBg{
+.blueBg, .academics{
     background:#0C577B;
 }
 .whatsnew{
