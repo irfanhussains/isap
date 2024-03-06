@@ -289,6 +289,9 @@ footer{
     background-attachment: fixed;
     background-size: cover;
 }
+.publications .card{
+    cursor: pointer;
+}
 
 .socialBorders::before{
     content:"";
@@ -492,4 +495,7 @@ footer{
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
-  
+  #exampleModal1 .modal-body{
+    height: calc(100vh - 145px);
+    padding:0;
+  }
