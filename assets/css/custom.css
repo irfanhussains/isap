@@ -495,7 +495,11 @@ footer{
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
-  #exampleModal1 .modal-body{
+  .publicationsInner .modal-body{
     height: calc(100vh - 145px);
     padding:0;
+  }
+  .scrollDiv{
+    height: 500px;
+    overflow: auto;
   }
